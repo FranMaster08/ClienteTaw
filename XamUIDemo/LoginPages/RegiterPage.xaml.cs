@@ -18,7 +18,7 @@ namespace XamUIDemo.LoginPages
             Task.Run(async () =>
             {
                // await ViewAnimations.FadeAnimY(Logo);
-                await ViewAnimations.FadeAnimY(LoginButton);
+               
                 await ViewAnimations.FadeAnimY(SignupButton);
             });
         }

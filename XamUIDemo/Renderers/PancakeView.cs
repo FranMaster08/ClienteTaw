@@ -1,6 +1,7 @@
 ﻿using System;
 using XamUIDemo.Styles;
 using Xamarin.Forms;
+using GradientStopCollection = Xamarin.Forms.GradientStopCollection;
 
 namespace XamUIDemo.Renderers
 {
@@ -25,7 +26,7 @@ namespace XamUIDemo.Renderers
         public static readonly BindableProperty BackgroundGradientStopsProperty = BindableProperty.Create(nameof(BackgroundGradientStops), typeof(GradientStopCollection), typeof(PancakeView), defaultValue: default(GradientStopCollection),
         defaultValueCreator: bindable =>
         {
-            return new GradientStopCollection();
+            return new Xamarin.Forms.GradientStopCollection();
         });
 
         public static readonly BindableProperty BorderGradientStartColorProperty = BindableProperty.Create(nameof(BorderGradientStartColor), typeof(Color), typeof(PancakeView), defaultValue: default(Color));
@@ -64,9 +65,9 @@ namespace XamUIDemo.Renderers
             set { SetValue(BackgroundGradientAngleProperty, value); }
         }
 
-        public GradientStopCollection BackgroundGradientStops
+        public Xamarin.Forms.GradientStopCollection BackgroundGradientStops
         {
-            get { return (GradientStopCollection)GetValue(BackgroundGradientStopsProperty); }
+            get { return (Xamarin.Forms.GradientStopCollection)GetValue(BackgroundGradientStopsProperty); }
             set { SetValue(BackgroundGradientStopsProperty, value); }
         }
 
