@@ -95,6 +95,33 @@
     <BundleResource Include="Resources\bg1.png" />
     <BundleResource Include="Resources\bg9.png" />
     <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\Default-Portrait.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\wind.png" />
+    <BundleResource Include="Resources\weather.png" />
+    <BundleResource Include="Resources\settings.png" />
+    <BundleResource Include="Resources\qr-code.png" />
+    <BundleResource Include="Resources\qr-code %281%29.png" />
+    <BundleResource Include="Resources\pressure.png" />
+    <BundleResource Include="Resources\place.png" />
+    <BundleResource Include="Resources\overlay.png" />
+    <BundleResource Include="Resources\money-transaction.png" />
+    <BundleResource Include="Resources\menu.png" />
+    <BundleResource Include="Resources\listColor.png" />
+    <BundleResource Include="Resources\list.png" />
+    <BundleResource Include="Resources\laptop.png" />
+    <BundleResource Include="Resources\humidity.png" />
+    <BundleResource Include="Resources\gridColor.png" />
+    <BundleResource Include="Resources\grid.png" />
+    <BundleResource Include="Resources\fondo.jpg" />
+    <BundleResource Include="Resources\donation.png" />
+    <BundleResource Include="Resources\dashboard.png" />
+    <BundleResource Include="Resources\cloudiness.png" />
+    <BundleResource Include="Resources\bg.png" />
+    <BundleResource Include="Resources\add.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-29.png" />

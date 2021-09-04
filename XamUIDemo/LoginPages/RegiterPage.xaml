@@ -1,19 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
-    x:Class="XamUIDemo.LoginPages.LoginPage10"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    BackgroundColor="Black"
-    NavigationPage.HasNavigationBar="False">
-    <AbsoluteLayout>
-        <Image
-            AbsoluteLayout.LayoutBounds="0,0,1,1"
-            AbsoluteLayout.LayoutFlags="All"
-            Aspect="AspectFill"
-            Opacity="0.9"
-            Source="bg9.png" />
+    x:Class="XamUIDemo.LoginPages.RegiterPage">
+ <AbsoluteLayout>
+   
 
-        <Image
+        <!-- <Image
             x:Name="Logo"
             Opacity="0"
             TranslationY="-50"
@@ -24,7 +17,24 @@
             AbsoluteLayout.LayoutFlags="All"
             BackgroundColor="#FC5A5A"
             HorizontalOptions="CenterAndExpand"
-            VerticalOptions="CenterAndExpand" />
+            VerticalOptions="CenterAndExpand" />-->
+     <StackLayout  Margin="10,0,10,30"
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            Spacing="20"
+            VerticalOptions="CenterAndExpand">
+                 <Entry Placeholder="Nombre"  HorizontalOptions="FillAndExpand"/>
+                 <Entry Placeholder="Apellido" HorizontalOptions="FillAndExpand" />
+                 <StackLayout>
+                     <StackLayout Orientation="Horizontal" >
+                              <Image Source="c.png" HeightRequest="20" WidthRequest="20"/>
+                              <DatePicker HorizontalOptions="FillAndExpand" Visual="Material" />
+                     </StackLayout>
+                     <Label Margin="0,-5,0,0" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                  </StackLayout>
+                 <Entry Placeholder="Fran"  HorizontalOptions="FillAndExpand" />
+     </StackLayout>
+
         <StackLayout
             Margin="10,30,10,30"
             AbsoluteLayout.LayoutBounds="0,0,1,1"
@@ -56,9 +66,9 @@
                         BackgroundColor="Transparent"
                         BorderColor="White"
                         BorderWidth="1"
+                        Clicked="Back"
                         CornerRadius="5"
                         Text="SIGN UP"
-                        Clicked="Register"
                         TextColor="White"
                         HorizontalOptions="FillAndExpand" />
                 </StackLayout>
@@ -80,5 +90,4 @@
             </Label>
         </StackLayout>
     </AbsoluteLayout>
-
 </ContentPage>

@@ -6,19 +6,18 @@ using XamUIDemo.Animations;
 
 namespace XamUIDemo.LoginPages
 {
-    public partial class LoginPage10 : ContentPage
+    public partial class RegiterPage : ContentPage
     {
-        public LoginPage10()
+        public RegiterPage()
         {
             InitializeComponent();
-
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
             Task.Run(async () =>
             {
-                await ViewAnimations.FadeAnimY(Logo);
+               // await ViewAnimations.FadeAnimY(Logo);
                 await ViewAnimations.FadeAnimY(LoginButton);
                 await ViewAnimations.FadeAnimY(SignupButton);
             });
@@ -30,10 +29,6 @@ namespace XamUIDemo.LoginPages
         protected void Login(object s, EventArgs e)
         {
             Navigation.PushAsync(new PrincipalPage());
-        }
-        protected void Register(object s, EventArgs e)
-        {
-            Navigation.PushAsync(new RegiterPage());
         }
     }
 }

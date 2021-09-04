@@ -9,4 +9,12 @@
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="LoginPages\RegistroOage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="LoginPages\RegiterPage.xaml.cs">
+      <DependentUpon>RegiterPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

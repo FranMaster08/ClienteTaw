@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamUIDemo.LoginPages;
 
 namespace XamUIDemo
 {
@@ -10,7 +11,7 @@ namespace XamUIDemo
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new LoginPage10());
         }
 
         protected override void OnStart()
