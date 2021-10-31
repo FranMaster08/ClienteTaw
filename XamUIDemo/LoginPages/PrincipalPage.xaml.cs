@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using XamUIDemo.Utils;
 
 namespace XamUIDemo.LoginPages
 {
@@ -10,6 +11,7 @@ namespace XamUIDemo.LoginPages
         public PrincipalPage()
         {
             InitializeComponent();
+            this.Saludo.Text = "Hola ,"+loginUser.getInstance().UserLog.Nombre;
         }
     }
 }

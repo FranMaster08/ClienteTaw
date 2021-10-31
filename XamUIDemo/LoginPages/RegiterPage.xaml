@@ -20,37 +20,37 @@
                             VerticalOptions="StartAndExpand">
                 <StackLayout>
                     <Label  Text="Nombre" />
-                    <Entry  HorizontalOptions="FillAndExpand"/>
+                    <Entry x:Name="Nombre" HorizontalOptions="FillAndExpand"/>
                 </StackLayout>
                 <StackLayout>
                     <Label  Text="Apellido" />
-                    <Entry  HorizontalOptions="FillAndExpand"/>
+                    <Entry x:Name="Apellido" HorizontalOptions="FillAndExpand"/>
                 </StackLayout>
                 <StackLayout>
                     <Label  Text="Fecha Nacimiento" />
-                    <DatePicker Format="MMMM dd, yyyy" HorizontalOptions="FillAndExpand"/>
+                    <DatePicker x:Name='fecha' Format="MMMM dd, yyyy" HorizontalOptions="FillAndExpand"/>
                 </StackLayout>
                 <StackLayout>
                     <Label  Text="Direccion" />
-                    <Entry  HorizontalOptions="FillAndExpand"/>
+                    <Entry x:Name="Direccion" HorizontalOptions="FillAndExpand"/>
                 </StackLayout>
                 <StackLayout>
                     <Label  Text="Ciudad" />
-                    <Entry  HorizontalOptions="FillAndExpand"/>
+                    <Entry x:Name="Ciudad" HorizontalOptions="FillAndExpand"/>
                 </StackLayout>
                 <StackLayout>
                     <Label  Text="Provincia" />
-                    <Entry  HorizontalOptions="FillAndExpand"/>
+                    <Entry x:Name="Provincia" HorizontalOptions="FillAndExpand"/>
                 </StackLayout>
 
                 <StackLayout>
                     <Label  Text="Email" />
-                    <Entry HorizontalOptions="FillAndExpand"/>
+                    <Entry x:Name="Email" HorizontalOptions="FillAndExpand"/>
                 </StackLayout>
 
                 <StackLayout>
                     <Label  Text="Password" />
-                    <Entry  IsPassword="True" HorizontalOptions="FillAndExpand"/>
+                    <Entry x:Name="Password" IsPassword="True" HorizontalOptions="FillAndExpand"/>
                 </StackLayout>
 
 
@@ -73,7 +73,7 @@
                         HeightRequest="60"
                         BackgroundColor="#FC5A5A"
                         CornerRadius="5"
-                        Text="LOGIN"
+                        Text="CREAR"
                         Clicked="Login"
                         TextColor="White"
                         HorizontalOptions="FillAndExpand" />
@@ -84,8 +84,8 @@
                         BorderColor="White"
                         BorderWidth="1"
                         CornerRadius="5"
-                        Text="SIGN UP"
-                        Clicked="Register"
+                        Clicked="Back"
+                        Text="VOLVER"
                         TextColor="White"
                         HorizontalOptions="FillAndExpand" />
                         </StackLayout>
@@ -106,13 +106,6 @@
                         </Label.FormattedText>
                     </Label>
                 </StackLayout>
-
-
-
-
-
-
-
 
             </StackLayout>
 

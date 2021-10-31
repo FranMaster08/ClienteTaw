@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamUIDemo.Android", "XamUIDemo.Android\XamUIDemo.Android.csproj", "{B085165E-2B8E-4CA4-865A-74CC0C38622C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamUIDemo.iOS", "XamUIDemo.iOS\XamUIDemo.iOS.csproj", "{8ECEB38A-BC93-4099-B689-25A66EEF2F7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taw.iOS", "XamUIDemo.iOS\Taw.iOS.csproj", "{8ECEB38A-BC93-4099-B689-25A66EEF2F7B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamUIDemo", "XamUIDemo\XamUIDemo.csproj", "{1A72F333-4921-403E-B8D5-541D49EFBA28}"
 EndProject

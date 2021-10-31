@@ -29,7 +29,7 @@ namespace XamUIDemo.LoginPages
         }
         protected void Login(object s, EventArgs e)
         {
-            Navigation.PushAsync(new PrincipalPage());
+            Navigation.PushAsync(new LoginPage2());
         }
         protected void Register(object s, EventArgs e)
         {

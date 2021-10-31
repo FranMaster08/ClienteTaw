@@ -5,9 +5,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:renderers="clr-namespace:XamUIDemo.Renderers"
     NavigationPage.HasNavigationBar="False">
-    <StackLayout>
+
         <AbsoluteLayout>
-            <Grid AbsoluteLayout.LayoutBounds="0,0,1,.7" AbsoluteLayout.LayoutFlags="All">
+            <Grid AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
@@ -30,7 +30,6 @@
                         HorizontalOptions="CenterAndExpand"
                         VerticalOptions="CenterAndExpand" />
                     <StackLayout
-                        Opacity="0"
                         x:Name="MainStack"
                         TranslationY="40"
                         Margin="50,0,50,0"
@@ -50,6 +49,7 @@
                             HorizontalOptions="FillAndExpand">
                             <renderers:BorderlessEntry
                                 FontSize="14"
+                                x:Name="Email"
                                 Placeholder="enter your name"
                                 PlaceholderColor="Black" />
                         </renderers:PancakeView>
@@ -61,31 +61,36 @@
                             HorizontalOptions="FillAndExpand">
                             <renderers:BorderlessEntry
                                 FontSize="14"
+                                 x:Name="Pass"
                                 IsPassword="True"
                                 Placeholder="enter your password"
                                 PlaceholderColor="Black" />
                         </renderers:PancakeView>
-                        <Button
+                        <StackLayout>
+                             <Button
                             Margin="0,20,0,0"
                             Clicked="Login"
                             BackgroundColor="#D7AE89"
                             FontAttributes="Bold"
-                            Text="login"
+                            Text="ENTRAR"
                             TextColor="White"
                             HorizontalOptions="FillAndExpand"
                             VerticalOptions="FillAndExpand" />
+                             <Button
+                            Margin="0,5,0,0"
+                            Clicked="Back"
+                            BackgroundColor="#FC5A5A"
+                            FontAttributes="Bold"
+                            Text="VOLVER"
+                            TextColor="White"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand" />
+                        </StackLayout>
+                       
                     </StackLayout>
                 </StackLayout>
             </Grid>
-            <Button
-                AbsoluteLayout.LayoutBounds="1,1,1,.3"
-                AbsoluteLayout.LayoutFlags="All"
-                BackgroundColor="White"
-                Text="SINUP"
-                Clicked="Back"
-                TextColor="Black"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand" />
+      
         </AbsoluteLayout>
-    </StackLayout>
+
 </ContentPage>

@@ -8,6 +8,8 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RestSharp" Version="106.12.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="LoginPages\RegistroOage.xaml.cs" />
@@ -16,5 +18,15 @@
     <Compile Update="LoginPages\RegiterPage.xaml.cs">
       <DependentUpon>RegiterPage.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="RestSharp" />
+    <None Remove="Utils\" />
+    <None Remove="Responses\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utils\" />
+    <Folder Include="Responses\" />
   </ItemGroup>
 </Project>
