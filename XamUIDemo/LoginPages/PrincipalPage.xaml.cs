@@ -11,7 +11,7 @@ namespace XamUIDemo.LoginPages
         public PrincipalPage()
         {
             InitializeComponent();
-            this.Saludo.Text = "Hola ,"+loginUser.getInstance().UserLog.Nombre;
+            this.Saludo.Text = "Hola , Es bueno verte de nuevo";
         }
     }
 }
